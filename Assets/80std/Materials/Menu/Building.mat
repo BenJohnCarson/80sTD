@@ -7,8 +7,8 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Building
-  m_Shader: {fileID: 4800000, guid: ec8ba4708b4b24ea3874139453950356, type: 3}
-  m_ShaderKeywords: _EMISSION _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A _SUNENABLED_ON
+  m_Shader: {fileID: 4800000, guid: 00ded451f1dcd40e8b11b830236d3789, type: 3}
+  m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -48,7 +48,7 @@ Material:
     - first:
         name: _GridTex
       second:
-        m_Texture: {fileID: 2800000, guid: 5ebd0c854d95449728bead39ed524b54, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -77,8 +77,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - first:
+        name: PixelSnap
+      second: 0
+    - first:
         name: _BumpScale
       second: 1
+    - first:
+        name: _ColorMask
+      second: 15
     - first:
         name: _Cutoff
       second: 0.5
@@ -86,34 +92,19 @@ Material:
         name: _DetailNormalMapScale
       second: 1
     - first:
-        name: _DirectionPitch
-      second: 0
-    - first:
-        name: _DirectionYaw
-      second: 0
-    - first:
         name: _DstBlend
       second: 0
     - first:
         name: _EmissionGain
       second: 0.5
     - first:
-        name: _Exponent
-      second: 1
-    - first:
-        name: _Gain
-      second: 2
-    - first:
         name: _GlossMapScale
-      second: 0
+      second: 1
     - first:
         name: _Glossiness
       second: 0.5
     - first:
         name: _GlossyReflections
-      second: 1
-    - first:
-        name: _Intensity
       second: 1
     - first:
         name: _Metallic
@@ -128,8 +119,11 @@ Material:
         name: _Parallax
       second: 0.02
     - first:
-        name: _SmoothnessTextureChannel
+        name: _Scale
       second: 1
+    - first:
+        name: _SmoothnessTextureChannel
+      second: 0
     - first:
         name: _Specular
       second: 100
@@ -140,32 +134,29 @@ Material:
         name: _SrcBlend
       second: 1
     - first:
+        name: _Stencil
+      second: 0
+    - first:
+        name: _StencilComp
+      second: 7.66
+    - first:
+        name: _StencilOp
+      second: 0
+    - first:
+        name: _StencilReadMask
+      second: 255
+    - first:
+        name: _StencilWriteMask
+      second: 255
+    - first:
         name: _StripesDistance
-      second: 0.01
+      second: 0.198
     - first:
-        name: _StripesExponent1
-      second: 4
-    - first:
-        name: _StripesHeight
-      second: 0.45
+        name: _StripesExponent
+      second: 1.03
     - first:
         name: _StripesWidth
-      second: 0.01
-    - first:
-        name: _SunEnabled
-      second: 1
-    - first:
-        name: _SunExponent
-      second: 5
-    - first:
-        name: _SunPitch
-      second: 0
-    - first:
-        name: _SunSize
-      second: 0.01
-    - first:
-        name: _SunYaw
-      second: 0
+      second: 0.125
     - first:
         name: _UVSec
       second: 0
@@ -173,42 +164,30 @@ Material:
         name: _UseSpecular
       second: 0
     - first:
+        name: _UseUIAlphaClip
+      second: 0
+    - first:
         name: _ZWrite
       second: 1
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0, g: 0, b: 0, a: 1}
+      second: {r: 1, g: 1, b: 1, a: 1}
     - first:
         name: _Color1
-      second: {r: 0, g: 0.7, b: 0.74, a: 0}
+      second: {r: 1, g: 1, b: 0, a: 1}
     - first:
         name: _Color2
-      second: {r: 0.97, g: 0.67, b: 0.51, a: 0}
-    - first:
-        name: _ColorSun1
-      second: {r: 0.97, g: 0.67, b: 0.51, a: 0}
-    - first:
-        name: _ColorSun2
-      second: {r: 0.97, g: 0.17, b: 0.21, a: 0}
-    - first:
-        name: _Direction
-      second: {r: 0, g: 1, b: 0, a: 0}
+      second: {r: 1, g: 0, b: 1, a: 1}
     - first:
         name: _EmissionColor
-      second: {r: 0.107251525, g: 0.33088237, b: 0, a: 1}
+      second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _LineColor
       second: {r: 0.1, g: 1, b: 0.1, a: 1}
     - first:
         name: _MainColor
-      second: {r: 0.17647058, g: 0.06487889, b: 0.06487889, a: 1}
+      second: {r: 0.1, g: 0.1, b: 0.1, a: 1}
     - first:
         name: _ShadowColor
       second: {r: 0, g: 0, b: 0, a: 1}
-    - first:
-        name: _SunDirection
-      second: {r: 0, g: 1, b: 0, a: 0}
-    - first:
-        name: _SunDirectionP
-      second: {r: 0, g: 0, b: 0, a: 0}

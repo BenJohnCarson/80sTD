@@ -32,8 +32,12 @@ public class TurretTargeting : MonoBehaviour
 		nearestEnemy = null;
 	}
 
+	public void ResetDistance() {
+		shortestDistance = Mathf.Infinity;
+	}
+
 	float DistanceToEnemy(GameObject enemy) {
-		return Vector3.Distance (transform.position, enemy.transform.position);
+		return Vector3.Distance (self.transform.position, enemy.transform.position);
 	}
 
 	public Vector3 AngleToTarget() {
